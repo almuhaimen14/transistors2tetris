@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+ALICE V3 DOCUMENTATION WEBSITE.
+-->
+<html>
+	<head>
+		<title>TRANSISTORS2TETRIS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script data-reload src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<img src="images/Asset1.svg" alt="Computer" class="svg-icon">
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>TRANSISTORS2TETRIS</h1>
+								<p>A physical implementation of the nand2tetris project entirely from transistors<br /> to better understand the underlying components of a computer from groundup</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#overview">OverVIEW</a></li>
+								<li><a href="#transistors">TRANSISTORS</a></li>
+								<li><a href="#ALU">THE ALU</a></li>
+								<li><a href="#Gallery">PROJECT GALLERY</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="overview">
+								<h2 class="major">Overview</h2>
+								<p>A computer is an electronic device that processes data according to a set of instructions, known as programs. It can perform a wide range of tasks, from simple arithmetic operations to complex simulations and data analysis. The fundamental components of a computer include hardware and software. Hardware refers to the physical components such as the central processing unit (CPU), memory, and input/output devices. Software comprises the programs and operating systems that control the hardware and enable the computer to perform specific tasks.
+
+									Computers operate on binary logic, using a series of electrical signals represented as ones (1) and zeros (0). This binary system is the foundation of all computing processes, enabling the execution of complex algorithms and operations that power modern technology.The evolution of computers can be traced back to ancient mechanical devices, progressing through various technological advancements that have shaped modern computing.</p>
+								<h2>MECHANICAL COMPUTERS</h2>
+								<span class="image main"><img src="images/Asset2.png" alt="Blaise Pascal" /></span>
+								<p> One of the earliest forms of mechanical computation was the abacus, used for arithmetic calculations. In the 17th century, Blaise Pascal developed the Pascaline, a mechanical calculator capable of performing addition and subtraction. Later, in the 19th century, Charles Babbage designed the Analytical Engine, a conceptual mechanical computer that could be programmed using punched cards. Although never fully built, the Analytical Engine laid the groundwork for modern computer design.</p>
+								<h2>RELAY COMPUTERS</h2>
+								<span class="image main"><img src="images/Zuse.png" alt="Zuse Z3" /></span>
+								<p>The early 20th century saw the advent of electromechanical computers using relays, which are switches operated by electrical currents. One notable example is the Zuse Z3, developed by Konrad Zuse in 1941. The Z3 was the world's first programmable computer, using relays to perform arithmetic operations and data storage.
+									Constructed using 2000 relays, it featured a 22-bit word length and operated at a clock frequency of approximately 5–10 Hz. Program code and data for the Z3 were stored on punched film. This pioneering machine was completed in Berlin in 1941.	</p>
+								<h2>VACUUM TUBES</h2>
+								<span class="image main"><img src="images/Asset 4.png" alt="Zuse Z3" /></span>
+								<p>The introduction of vacuum tubes marked a significant leap in computing technology. Vacuum tubes could amplify electrical signals and switch them on and off, functioning as electronic switches. The ENIAC (Electronic Numerical Integrator and Computer), completed in 1945, was the first general-purpose electronic computer. It used approximately 18,000 vacuum tubes and could perform complex calculations at unprecedented speeds. However, vacuum tubes were bulky, consumed a lot of power, and were prone to failure.	</p>
+							<h2>TRANSISTORS</h2>
+								<span class="image main"><img src="images/TRANSISTORS.jpg" alt="Zuse Z3" /></span>
+								<p>The invention of the transistor in 1947 by John Bardeen, Walter Brattain, and William Shockley at Bell Labs revolutionized the field of electronics and computing. Transistors are semiconductor devices that can amplify and switch electronic signals. They are smaller, more reliable, and more energy-efficient than vacuum tubes.
+
+									Transistors enabled the development of smaller, faster, and more powerful computers. The IBM 1401, introduced in 1959, was one of the first computers to use transistors, offering improved performance and reliability over its vacuum tube predecessors. The integration of transistors into circuits led to the creation of integrated circuits (ICs), where multiple transistors and other components are fabricated onto a single silicon chip.</p>
+							</article>
+
+						<!-- Work -->
+							<article id="transistors">
+								<h2 class="major">TRANSISTORS</h2>
+								<span class="image main"><img src="images/npn.png" alt="Zuse Z3" /></span>
+								  
+								<p>A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power. It is composed of semiconductor material, typically silicon, that can conduct electricity under certain conditions. Transistors are fundamental building blocks in modern electronic devices and are used in a wide range of applications, from amplifiers to switches, and in complex circuits like processors.
+
+									Key Functions of a Transistor:
+									Switching: Transistors can act as electronic switches, turning a current on or off.</p>
+								  <h2> TRANSISTOR AS A SWITCH</h2>
+								  <span class="image main"><img src="images/npnswitch.png" alt="Zuse Z3" /></span>
+								<p>One of the most fundamental applications of a transistor is using it to control the flow of power to another part of the circuit -- using it as an electric switch. Driving it in either cutoff or saturation mode, the transistor can create the binary on/off effect of a switch.When the voltage at the base is greater than 0.6V (or whatever your transistor's Vth might be), the transistor starts saturating and looks like a short circuit between collector and emitter. When the voltage at the base is less than 0.6V the transistor is in cutoff mode -- no current flows because it looks like an open circuit between C and E.</p>  
+									<h2> LOGIC GATES</h2>
+									
+									<p>Since transistors function as switches, we can utilize them to construct logic gates, as logic gates are essentially switches arranged in a specific configuration. By controlling the flow of current through a series of transistors, we can create fundamental logic gates such as AND, OR, and NOT gates, which are the building blocks of digital circuits. These logic gates can be combined to form more complex circuits, enabling the execution of a wide range of computational tasks. Thus, the versatility and switching capabilities of transistors make them ideal for creating the intricate networks of logic gates that power modern electronics and computing devices..</p>
+								
+									<h2> AND GATE</h2>
+									<span class="image main"><img src="images/AND.png" alt="Zuse Z3" /></span>
+									<h2> NOT GATE</h2>
+									<span class="image main"><img src="images/NOT.png" alt="Zuse Z3" /></span>
+									<h2> OR GATE</h2>
+									<span class="image main"><img src="images/OR.png" alt="Zuse Z3" /></span>
+								</article>
+
+						<!-- About -->
+							<article id="ALU">
+								<h2 class="major">ALU</h2>
+								<span class="image main"><img src="images/alu.png" alt="" /></span>
+								<p>
+									An Arithmetic Logic Unit (ALU) is a crucial component of a computer's central processing unit (CPU) responsible for executing arithmetic operations like addition, subtraction, multiplication, and division, as well as logical operations such as AND, OR, NOT, and XOR. It operates on binary inputs (operands) and produces outputs along with status flags that indicate specific conditions like zero result, negative result, overflow, or carry out. The ALU works closely with the CPU's control unit and registers to process instructions from programs, making it fundamental to the computer's ability to perform calculations and execute complex algorithms efficiently, thus playing a vital role in determining the computer's overall processing power and speed.</p>
+									<h2 class="major">MOST FUNDAMENTAL FUNCTION</h2>
+									
+									<p>
+										Addition and subtraction are the most fundamental operations in an ALU because they serve as the basis for many other arithmetic and logical operations. Multiplication can be performed as repeated addition, and division as repeated subtraction, while comparison operations can use subtraction to determine relative values. Logical shifts and rotations often involve addition and subtraction combined with bitwise operations. These operations are simpler and faster to implement in hardware, making them crucial for the overall performance of the CPU. Furthermore, many algorithms and data processing tasks rely on these basic operations, underpinning more complex computations and logical functions in digital systems..</p>
+										<h2> ADDER- SUBTRACTOR</h2>
+										<span class="image main"><img src="images/ADDSUBTRACT.png" alt="Zuse Z3" /></span>
+										<p>
+											An ALU can essentially be reduced to an adder-subtractor circuit because addition and subtraction are the core operations from which many other arithmetic and logical functions can be derived. By configuring an adder to also perform subtraction through methods like two's complement. 
+											We can achieve an ALU that performs both addition and subtraction using full adders and XOR gates by leveraging the properties of binary arithmetic. In an adder-subtractor circuit, full adders are used to sum the input bits along with any carry from the previous stage. To perform subtraction, we utilize the concept of two's complement, which involves inverting the bits of the number to be subtracted and adding one. This can be efficiently done using XOR gates, which invert each bit of the second operand when a control signal (indicating subtraction) is active. The XOR gates effectively toggle between passing the original bits (for addition) and their complements (for subtraction). The resulting bits are then fed into the full adders along with the addition of a 1 to the least significant bit position to complete the two's complement operation. This configuration allows the ALU to perform both addition and subtraction seamlessly by simply adjusting the control signal, making it a versatile and fundamental component of digital arithmetic.
+										</p>
+									</article>
+
+						<!-- Contact -->
+							<article id="Gallery">
+								<h2 class="major">PROJECT IMAGE</h2>
+								<h2> IMAGE 1</h2>
+								<span class="image main"><img src="images/IMAGE1.png" alt="Zuse Z3" /></span>
+								<h2> IMAGE 2</h2>
+								<span class="image main"><img src="images/IMAGE2.png" alt="Zuse Z3" /></span>
+								<h2> IMAGE 3</h2>
+								<span class="image main"><img src="images/IMAGE3.png" alt="Zuse Z3" /></span>
+							</article>
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; <a href="https://www.bennington.edu" target="_blank" rel="noopener noreferrer">BENNINGTON COLLEGE</a> | SYSTEMS 1: Hardware Architecture and Design - 2024</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
